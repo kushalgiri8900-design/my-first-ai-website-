@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bottega — Modern Local Eatery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap');
+      
+      body {
+        font-family: 'Lato', sans-serif;
+        color: #1f2937;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Playfair Display', serif;
+      }
+      /* New Accent Color: #D74F36 */
+      .accent-text {
+        color: #D74F36;
+      }
+      .accent-bg {
+        background-color: #D74F36;
+      }
+      .accent-border {
+        border-color: #D74F36;
+      }
+      .accent-hover:hover {
+        background-color: #B7372C;
+      }
+    </style>
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Bottega",
+      "image": "https://picsum.photos/1200/600",
+      "telephone": "+1-415-555-0199",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1234 Market St",
+        "addressLocality": "San Francisco",
+        "addressRegion": "CA",
+        "postalCode": "94105",
+        "addressCountry": "US"
+      },
+      "openingHours": "Mo-Su 11:00-22:00",
+      "servesCuisine": ["Italian","Pizza","Pasta"],
+      "priceRange": "$$",
+      "url": "https://bottegasf.com"
+    }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.6",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-stone-50 text-stone-800 antialiased selection:bg-[#D74F36] selection:text-white">
+    <div id="root"></div>
+  </body>
+</html>
